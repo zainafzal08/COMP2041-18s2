@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 for f in *.html; do
 	r=$(egrep '<blink>' $f)
-	if ! [ $r == "" ]; then
+	if [ -z $r ]; then
 		mv "$f" "$f.bad"
 	fi
 done
