@@ -15,5 +15,9 @@ while($current_town ne $end) {
       $shortest_dist{$current_town} = $new_dist;
     }
     # find next town
-
+    # for all key 1
+    #     for all key 2
+    #          if key1 has been visited
+    #                 for all neighbouts of key1
+    #                      check smallest.
 }
